@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-indigo block py-6"> Irfan Aqila Utama</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span class="hamburger-line duration-300 ease-in-out"></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-950"
+            >
+              <ul class="block lg:flex">
+                <!-- group = ketika a di klik, kita bisa ubah prilaku list nya -->
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo transition duration-500 dark:text-white"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo transition duration-500 dark:text-white"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo transition duration-500 dark:text-white"
+                    >Portofolio</a
+                  >
+                </li>
+                <!-- <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo dark:text-white"
+                    >Client</a
+                  >
+                </li> -->
+
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo transition duration-500 dark:text-white"
+                    >Contact</a
+                  >
+                </li>
+                <li class="mt-3 lg:mt-0 flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duarition-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <section id="home" class="pt-36 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- lg = large, jadi ketika large atau membesar akan berubah .... -->
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <!-- md = medium, jadi ketika layar medium, text akan berubah sebesar xl -->
+            <!-- lg = large, jadi ketika large atau membesar akan berubah .... -->
+            <h1 class="text-base font-semibold text-indigo md:text-xl lg:text-2xl">
+              Halo Semua 👋,
+              <!-- lg = large, jadi ketika large atau membesar akan berubah .... -->
+              <span
+                class="block font-bold text-dark text-4xl mt-1 mb-1 lg:text-5xl dark:text-slate300"
+                >Saya Irfan Aqila Utama
+              </span>
+            </h1>
+            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl dark:text-slate300">
+              <span class="text-indigo">Front-End</span> & Gamer
+            </h2>
+            <p class="font-medium text-secondary mb-10 leading-relaxed dark:text-slate300">
+              Kalau hidupmu error, mungkin lupa tutup kurung
+              <span class="text-dark font-bold dark:text-white">{} 😆</span>
+            </p>
+            <!-- <a
+              href="#"
+              class="text-base font-semibold text-white bg-indigo py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >Hubungi Saya</a
+            > -->
+            <a href="https://wa.me/6287795528998" target="_blank" class="inline-block">
+              <button
+                class="relative inline-flex h-12 active:scale-95 transistion overflow-hidden rounded-lg p-[3px] focus:outline-none"
+              >
+                <span
+                  class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"
+                >
+                </span>
+                <span
+                  class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-indigo px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 undefined"
+                >
+                  Hubungi Saya
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8H224V432c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2 lg:pl-20">
+            <div class="relative mt-10 lg:mt-0 lg:right-0">
+              <!-- dikasi relative agar bisa dikasi z index -->
+              <img
+                width="340"
+                src="img/saya.png"
+                alt="Irfan Aqila Utama"
+                class="max-w-full mx-auto relative z-10"
+              />
+              <span class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#6366f1"
+                    d="M47.6,-29.8C55,-14.7,49.7,5.5,39.6,21C29.6,36.5,14.8,47.3,-4,49.6C-22.8,51.9,-45.6,45.7,-53.3,31.5C-61.1,17.4,-53.8,-4.7,-42.4,-22.2C-31,-39.6,-15.5,-52.4,2.3,-53.7C20.1,-55,40.2,-44.9,47.6,-29.8Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about start -->
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-indigo mb-3">Tentang Saya</h4>
+            <!-- max-w-xl = lebar maksimal -->
+            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-slate300">
+              Sedang Menyusun Kode dan Mimpi Bersamaan
+            </h2>
+            <p
+              class="font-medium text-base text-secondary max-w-xl lg:text-lg text-justify dark:text-slate400"
+            >
+              Saya masih dalam proses belajar menjadi seorang Front-End Developer. Suka
+              bereksperimen dengan desain, warna, dan baris kode yang mulai terasa menyenangkan.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 lg:pl-10">
+            <h3
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-slate300"
+            >
+              Mari Berteman
+            </h3>
+            <p
+              class="font-medium text-base text-secondary mb-6 lg:text-lg text-justify max-w-lg dark:text-slate400"
+            >
+              Aku percaya setiap pertemanan bisa membuka peluang baru. Yuk, saling kenal, berbagi
+              cerita, pengalaman, atau sekadar ngobrol santai soal dunia web dan desain yang seru
+              banget ini!
+            </p>
+            <!-- flex agar berjajar dan items-center agar ditengah secara vertikal -->
+            <div class="flex items-center">
+              <!-- target blank agar membuka tab baru -->
+              <!-- flex justify-center untuk rata horizontal 
+                 items-ceanter untuk  rata vertikal -->
+              <!-- Linkdin -->
+              <ul class="example-2">
+                <li class="icon-content">
+                  <a
+                    href="https://www.linkedin.com/in/irfan-aqila-6297a52a8/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    data-social="linkedin"
+                  >
+                    <div class="filled"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-linkedin"
+                      viewBox="0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">LinkedIn</div>
+                </li>
+                <!-- Github -->
+                <li class="icon-content">
+                  <a
+                    href="https://github.com/IrfanAqila31"
+                    target="_blank"
+                    aria-label="GitHub"
+                    data-social="github"
+                  >
+                    <div class="filled"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">GitHub</div>
+                </li>
+                <!-- Instagram -->
+                <li class="icon-content">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    aria-label="Instagram"
+                    data-social="instagram"
+                  >
+                    <div class="filled"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-instagram"
+                      viewBox="0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">Instagram</div>
+                </li>
+                <!-- Youtube -->
+                <li class="icon-content">
+                  <a
+                    href="https://www.youtube.com/feed/you"
+                    target="_blank"
+                    aria-label="Youtube"
+                    data-social="youtube"
+                  >
+                    <div class="filled"></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-youtube"
+                      viewBox="0 0 16 16"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">Youtube</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+    <!-- portofolio start -->
+    <section id="portofolio" class="pt-36 pb-16 bg-indigo50 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-indigo">Portofolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">
+              Project Terbaru
+            </h2>
+            <p class="font-medium text-md text-secondary md:text-lg dark:text-slate400">
+              Walau masih belajar, saya berusaha membuat website yang menarik, cepat, dan mudah
+              digunakan oleh semua pengguna di berbagai perangkat.
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4 flex flex-wrap justify-center">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="img/1.png" alt="landing-page" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">
+              Landing Page Irfan Aqila Utama
+            </h3>
+            <p class="font-medium text-base text-secondary dark:text-slate400">
+              Website ini dibuat sebagai personal landing page sederhana untuk menampilkan profil,
+              kontak, dan media sosial saya dengan tampilan responsif.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="img/2.png" alt="landing-page" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">E-Commerce</h3>
+            <p class="font-medium text-base text-secondary dark:text-slate400">
+              Website E-Commerce sederhana yang menampilkan daftar produk makanan, menu, dan tombol
+              pemesanan dengan desain menarik dan mudah digunakan.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="img/3.png" alt="landing-page" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">
+              Landing Page Universitas Pendidikan Mandalika
+            </h3>
+            <p class="font-medium text-base text-secondary dark:text-slate400">
+              Website ini menampilkan profil Universitas Pendidikan Mandalika dengan tampilan
+              modern, responsif, dan mudah diakses untuk mahasiswa, dosen, dan masyarakat umum.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="img/4.png" alt="landing-page" class="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">E-Voting BEM</h3>
+            <p class="font-medium text-base text-secondary dark:text-slate400">
+              Aplikasi voting berbasis web yang memudahkan mahasiswa memilih ketua BEM secara cepat,
+              aman, transparan, dan efisien di lingkungan kampus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portofolio end -->
+
+    <!-- client start -->
+    <!-- <section id="clients" class="pt-36 pb-32 bg-slate-700">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-indigo">Clinets</h4>
+            <h2
+              class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Yang Pernah Bekerja Sama
+            </h2>
+            <p class="font-medium text-md text-secondary md:text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
+              eveniet! Perspiciatis excepturi architecto repellendus itaque
+              ipsa, asperiores dolor aspernatur reprehenderit!
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a
+              href="#"
+              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <img width="160" src="img/client/Tokopedia.svg" alt="Tokopedia" />
+            </a>
+            <a
+              href="#"
+              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <img src="img/client/gojek-seeklogo.svg" alt="Gojek" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- client end -->
+
+    <!-- contact start -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-indigo">Contact</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">
+              Hubungi Saya
+            </h2>
+            <p class="font-medium text-md text-secondary md:text-lg dark:text-slate400">
+              Jangan cuma liatin aja, hubungi saya dong! Siapa tahu obrolan santai kita berujung
+              jadi website kece 😎.
+            </p>
+          </div>
+        </div>
+        <form id="form-email">
+          <!-- agar ke tengah margin x nya auto -->
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base text-secondary dark:text-slate400 font-bold"
+                >Nama</label
+              >
+              <input
+                type="text"
+                id="name"
+                placeholder="Masukkan Nama Anda"
+                required
+                class="w-full text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-indigo focus:ring-1 focus:border-indigo shadow-md border border-indigo dark:bg-dark dark:text-white dark:border-2 dark:border-indigo"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base text-secondary dark:text-slate400 font-bold"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="Masukkan Email Anda"
+                required
+                class="w-full text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-indigo focus:ring-1 focus:border-indigo shadow-md border border-indigo dark:bg-dark dark:text-white dark:border-2 dark:border-indigo"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base text-secondary dark:text-slate400 font-bold"
+                >Pesan</label
+              >
+              <textarea
+                id="message"
+                placeholder="Tulis Pesan Anda"
+                required
+                class="w-full text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-indigo focus:ring-1 focus:border-indigo h-32 shadow-md border border-indigo dark:bg-dark dark:text-white dark:border-2 dark:border-indigo"
+              ></textarea>
+            </div>
+            <div class="w-full px-4 flex justify-center">
+              <!-- <button
+                class="text-base font-semibold text-white bg-indigo py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-300"
+              >
+                Kirim
+              </button> -->
+              <!-- <button
+                class="w-40 sm:w-48 md:w-64 lg:w-80 h-12 bg-white cursor-pointer rounded-3xl border-2 border-indigo shadow-[inset_0px_-2px_0px_1px_#6366f1] group hover:bg-indigo transition duration-300 ease-in-out"
+              >
+                <span class="font-medium text-secondary group-hover:text-white">Kirim</span>
+              </button> -->
+              <button
+                type="submit"
+                class="w-40 sm:w-48 md:w-64 lg:w-80 bg-gradient-to-r from-indigo to-indigo700 hover:from-indigo600 hover:to-indigo800 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- Pesan notifikasi -->
+        <!-- <p
+          id="success-message"
+          class="hidden text-green-600 font-semibold text-center mt-4 transition-all duration-500"
+        >
+          ✅ Pesan Anda telah dikirim!
+        </p> -->
+        <!-- Popup notifikasi -->
+        <!-- POPUP -->
+        <div
+          id="popup-message"
+          class="fixed inset-0 hidden z-50 flex justify-center items-center bg-black/50 backdrop-blur-sm transition-opacity duration-500"
+        >
+          <div
+            class="bg-white dark:bg-dark dark:text-slate-200 p-8 rounded-3xl shadow-2xl text-center w-90 transform scale-95 opacity-0 transition-all duration-500"
+            id="popup-box"
+          >
+            <div class="text-5xl mb-3 animate-bounce">✅</div>
+            <h2 class="text-indigo-600 font-bold text-2xl mb-2">Pesanmu udah nyampe, bro! 🚀</h2>
+            <p class="text-gray-600 text-sm mb-4 dark:text-slate300">
+              Sekarang waktunya duduk manis nunggu kabar 😁
+            </p>
+            <button
+              id="close-popup"
+              class="bg-indigo600 hover:bg-indigo700 text-white font-semibold px-6 py-2 rounded-full transition-all duration-300"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-white mb-5">
+              KellCode<span class="text-indigo300">;</span>
+            </h2>
+            <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+            <p>IrfanAqila31@gmail.com</p>
+            <p>Jl. Raden Puguh</p>
+            <p>Puyung</p>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <!-- inline- block agar bisa dikasi margin -->
+                <a href="#" class="inline-block text-base hover:text-indigo mb-3">Programing</a>
+              </li>
+              <li>
+                <!-- inline- block agar bisa dikasi margin -->
+                <a href="#" class="inline-block text-base hover:text-indigo mb-3">Teknologi</a>
+              </li>
+              <li>
+                <!-- inline- block agar bisa dikasi margin -->
+                <a href="#" class="inline-block text-base hover:text-indigo mb-3">Gaya Hidup</a>
+              </li>
+              <li>
+                <!-- inline- block agar bisa dikasi margin -->
+                <a href="#" class="inline-block text-base hover:text-indigo mb-3">Desain</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <!-- inline- block agar bisa dikasi margin -->
+                <a href="#home" class="inline-block text-base hover:text-indigo mb-3">Beranda</a>
+              </li>
+              <li>
+                <!-- inline- block agar bisa dikasi margin -->
+                <a href="#about" class="inline-block text-base hover:text-indigo mb-3"
+                  >Tentang Saya</a
+                >
+              </li>
+              <li>
+                <!-- inline- block agar bisa dikasi margin -->
+                <a href="#portofolio" class="inline-block text-base hover:text-indigo mb-3"
+                  >Portofolio</a
+                >
+              </li>
+              <li>
+                <!-- inline- block agar bisa dikasi margin -->
+                <a href="#contact" class="inline-block text-base hover:text-indigo mb-3">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-700 text-center">
+          <p class="text-slate-500 font-medium text-xs">
+            Dibuat oleh
+            <a
+              href="https://www.linkedin.com/in/irfan-aqila-6297a52a8/"
+              target="_blank"
+              class="font-bold text-indigo"
+              >Irfan Aqila Utama</a
+            >
+            menggunakan
+            <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500"
+              >Tailwind CSS</a
+            >
+            | 2025
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- back to top start -->
+    <a
+      href="#home"
+      class="hidden h-12 w-12 rounded-full fixed z-[9999] bottom-4 right-4 p-4 bg-indigo justify-center items-center hover:animate-pulse"
+      id="to-top"
+    >
+      <span class="block h-4 w-4 border-t-2 border-l-2 rotate-45 mt-2"></span
+    ></a>
+    <!-- back to top end -->
+    <script src="src/script.js"></script>
+  </body>
+</html>
