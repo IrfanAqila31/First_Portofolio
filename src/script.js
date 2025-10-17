@@ -87,12 +87,20 @@ if (contactForm) {
     const subject = encodeURIComponent("Pesan dari " + name);
     const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`);
     const to = "IrfanAqila31@gmail.com";
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-      to
-    )}&su=${subject}&body=${body}`;
 
-    // Buka Gmail
-    window.open(gmailUrl, "_blank");
+    // Fungsi untuk mendeteksi apakah pengguna menggunakan perangkat mobile
+    function isMobile() {
+      return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    }
+
+    const mailto = `mailto:${to}?subject=${subject}&body=${body}`;
+    const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+
+    if (isMobile()) {
+      window.location.href = mailto; // Buka aplikasi Gmail di HP
+    } else {
+      window.open(gmail, "_blank"); // Buka Gmail web di laptop
+    }
 
     // Kosongkan form
     contactForm.reset();

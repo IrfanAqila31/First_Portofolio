@@ -731,10 +731,6 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -1200,11 +1196,6 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
-.text-green-600 {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity, 1));
-}
-
 .text-indigo {
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity, 1));
@@ -1648,6 +1639,10 @@ ul {
 @media (min-width: 640px) {
   .sm\:w-48 {
     width: 12rem;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:text-4xl {
