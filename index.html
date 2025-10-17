@@ -506,19 +506,21 @@
             </div>
           </div>
         </form>
-      
+
         <!-- POPUP -->
         <div
           id="popup-message"
-          class="fixed inset-0 hidden z-50 flex justify-center items-center bg-black/50 backdrop-blur-sm transition-opacity duration-500"
+          class="fixed inset-0 hidden z-50 flex justify-center items-center bg-black/50 backdrop-blur-sm transition-opacity duration-500 px-4"
         >
           <div
-            class=" bg-white dark:bg-dark dark:text-slate-200 p-8 rounded-3xl shadow-2xl text-center w-90 transform scale-95 opacity-0 transition-all duration-500"
+            class="sm:max-w-[500px] bg-white dark:bg-dark dark:text-slate-200 p-6 sm:p-8 rounded-3xl shadow-2xl text-center w-full max-w-sm transform scale-95 opacity-0 transition-all duration-500"
             id="popup-box"
           >
             <div class="text-5xl mb-3 animate-bounce">✅</div>
-            <h2 class="text-indigo-600 font-bold text-2xl mb-2">Pesanmu udah nyampe, bro! 🚀</h2>
-            <p class="text-gray-600 text-sm mb-4 dark:text-slate300">
+            <h2 class="text-slate-200 font-bold text-xl sm:text-2xl mb-2">
+              Pesanmu udah nyampe, bro! 🚀
+            </h2>
+            <p class="text-gray-600 text-sm mb-4 dark:text-slate-300">
               Sekarang waktunya duduk manis nunggu kabar 😁
             </p>
             <button
